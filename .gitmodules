@@ -1,39 +1,52 @@
 [submodule "_ref_design/NeonSFF"]
 	path = _ref_design/NeonSFF
 	url = https://github.com/aliuliu121/NeonSFF
+	shallow = true
 [submodule "_ref_design/Cube_Mini-ITX"]
 	path = _ref_design/Cube_Mini-ITX
 	url = https://github.com/amirmashal/Cube_Mini-ITX
+	shallow = true
 [submodule "_ref_design/MicroATX-BoxChassis"]
 	path = _ref_design/MicroATX-BoxChassis
 	url = https://github.com/amirmashal/MicroATX-BoxChassis
+	shallow = true
 [submodule "_ref_design/ProMini_ITX_Case"]
 	path = _ref_design/ProMini_ITX_Case
 	url = https://github.com/amirmashal/ProMini_ITX_Case
+	shallow = true
 [submodule "_ref_design/OpenCase"]
 	path = _ref_design/OpenCase
 	url = https://github.com/berserkwarwolf/OpenCase
+	shallow = true
 [submodule "_ref_design/Mini-itx-Custom-Case-3DModel"]
 	path = _ref_design/Mini-itx-Custom-Case-3DModel
 	url = https://github.com/brandonmarino/Mini-itx-Custom-Case-3DModel
+	shallow = true
 [submodule "_ref_design/woodnas"]
 	path = _ref_design/woodnas
 	url = https://github.com/cleeus/woodnas
+	shallow = true
 [submodule "_ref_design/yasff"]
 	path = _ref_design/yasff
 	url = https://github.com/cokeeffekt/yasff
+	shallow = true
 [submodule "_ref_design/Skyscraper"]
 	path = _ref_design/Skyscraper
 	url = https://github.com/NanyiJiang/Skyscraper
+	shallow = true
 [submodule "_ref_design/mellori_ITX"]
 	path = _ref_design/mellori_ITX
 	url = https://github.com/phkahler/mellori_ITX
+	shallow = true
 [submodule "_ref_design/sfx-openbeam"]
 	path = _ref_design/sfx-openbeam
 	url = https://github.com/simonvanderveldt/sfx-openbeam
+	shallow = true
 [submodule "_ref_design/honeyitx"]
 	path = _ref_design/honeyitx
 	url = https://github.com/sprucegum/honeyitx
+	shallow = true
 [submodule "_ref_design/LACC"]
 	path = _ref_design/LACC
 	url = https://github.com/tahnok/LACC
+	shallow = true
