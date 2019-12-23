@@ -1,4 +1,13 @@
+# My collection of the open source itx case design
 
+### build status
+- master
+[![Build Status](https://travis-ci.org/louiscklaw/opensource-pc-case.svg?branch=master)](https://travis-ci.org/louiscklaw/opensource-pc-case)
+
+- develop
+[![Build Status](https://travis-ci.org/louiscklaw/opensource-pc-case.svg?branch=develop)](https://travis-ci.org/louiscklaw/opensource-pc-case)
+
+### ref
 https://github.com/aliuliu121/NeonSFF
 https://github.com/amirmashal/Cube_Mini-ITX
 https://github.com/amirmashal/MicroATX-BoxChassis
