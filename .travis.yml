@@ -10,7 +10,7 @@ after_success:
   - pip3 install --user pipenv
   - pipenv sync
   - pipenv run python3 _utils/merge.py
-  - pipenv run python3 _utils/make_release.py
+  - pipenv run python3 _utils/shallow_submodule.py
 
 notifications:
   slack:
