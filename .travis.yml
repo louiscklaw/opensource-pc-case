@@ -3,6 +3,10 @@ dist: bionic
 script:
   - hostname
 
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/_ref_design
+
 after_success:
   - id
   - sudo apt update
