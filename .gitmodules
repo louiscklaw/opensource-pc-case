@@ -50,3 +50,7 @@
 	path = _ref_design/LACC
 	url = https://github.com/tahnok/LACC
 	shallow = true
+[submodule "_ref_design/pc.case"]
+	path = _ref_design/pc.case
+	url = https://github.com/anzerr/pc.case.git
+	shallow = true

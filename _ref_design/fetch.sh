@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+git submodule add --depth=10 https://github.com/anzerr/pc.case.git
 git submodule add --depth=10 https://github.com/aliuliu121/NeonSFF
 git submodule add --depth=10 https://github.com/amirmashal/Cube_Mini-ITX
 git submodule add --depth=10 https://github.com/amirmashal/MicroATX-BoxChassis

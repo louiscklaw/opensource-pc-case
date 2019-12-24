@@ -23,3 +23,15 @@ https://github.com/sprucegum/honeyitx
 https://github.com/tahnok/LACC
 
 https://www.thingiverse.com/thing:2966093
+
+
+### Accessories
+
+谷歌电器正品改装机箱重启启动电脑主机开关带灯12 16mm金属按钮
+https://item.taobao.com/item.htm?spm=a230r.1.14.16.593521d1PueGpJ&id=536451796173&ns=1&abbucket=3#detail
+
+ADT显卡延长线 PCI-E 3.0 x16 垂直竖立放机箱pcie 16x 全速稳定
+https://item.taobao.com/item.htm?spm=a230r.1.14.20.38d0516f6DfNf8&id=548248538476&ns=1&abbucket=3#detail
+
+前置双USB3.0机箱面板高清音频线HD高保真DIY音频组扁线3.0数据线
+https://item.taobao.com/item.htm?spm=a230r.1.14.71.3a197270U3z9ge&id=552068532869&ns=1&abbucket=3#detail
