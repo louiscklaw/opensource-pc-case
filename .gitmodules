@@ -50,6 +50,10 @@
 	path = _ref_design/LACC
 	url = https://github.com/tahnok/LACC
 	shallow = true
+[submodule "_ref_design/system76/thelio"]
+	path = _ref_design/system76/thelio
+	url = https://github.com/system76/thelio.git
+	shallow = true
 [submodule "_ref_design/pc.case"]
 	path = _ref_design/pc.case
 	url = https://github.com/anzerr/pc.case.git
