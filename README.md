@@ -23,7 +23,13 @@ https://github.com/sprucegum/honeyitx
 https://github.com/tahnok/LACC
 
 https://www.thingiverse.com/thing:2966093
+https://www.thingiverse.com/thing:3511201
+https://www.thingiverse.com/thing:1708893
 
+
+
+
+https://github.com/raspberrypilearning?page=2
 
 ### Accessories
 
