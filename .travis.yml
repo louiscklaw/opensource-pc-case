@@ -1,29 +1,14 @@
 dist: bionic
 
 script:
+  - export
   - hostname
+  - ./build.sh
 
-cache:
-  directories:
-    - $TRAVIS_BUILD_DIR/_ref_design
+import:
+  - credentials.yml
+  - .travis-merger.yml
 
-after_success:
-  - id
-  - sudo apt update
-  - sudo apt install -y python3 python3-pip python3-dev python3-wheel python3-setuptools
-  - pip3 install --user pipenv
-  - pipenv sync
-  - pipenv run python3 _utils/merge.py
-  - pipenv run python3 _utils/shallow_submodule.py
-
-notifications:
-  slack:
-    secure: kRm7oBsQwC8VLnF76BuiJXTe5DChr97u+VJJAS8rjBVDNx8jAy4a3dwH9SzX8jgLgXmHaU6axnieGsPpiKM7CAaXpUOaHUklQdar4qIi5jdZN2RSqeHwohATrzI0C2ELdr8TpG27Pa4+MO0Jg9oOkgYw5h+tZcWAhbTjvlq9JV1sD8BrR/zby9m7kBYxBKJMeKh+G8GHmqyAjylqFkCbvyaTSjrVdOVytScLRhTKIpw3wsxhHcsFwSIAg6kP/hC/mNipeRaW3N6ks12Ltyobskckv5cZNxI94h4PtoIW/1Z8XZ0sqybRRL7q/y6XhxLhz7lYhMR9qqO9n5gzUzK/Dn1uxnHCgHf0HW+IHScpRgQ0KGTZRJWkNdSjrGGMF6al8PQCDevhXxFhdlwMI5zHfuPQbUiIId2d/uUGbHvpzDG2+Ia19NUTP6I0stvawiBeZ60yhH/1Tjwj5iGGOgB8Ugik9CofEEpLBPflVrgm1jEwmYOToBNkUBDoTzEQeBknl+vY7SScrqY2B/upi8S2zZXqkOw9y+iEuQ3+z2f3IVB2uKbh0/XGlSLSOYq7U38j8F7WNnnxS20QmOwW/2jKYMkYec6vRk9DcZ7OdT5FTIZE2rgB/ZIYeMJ+GXe0gQXKXLmH6lSCFd80PJyqbaKlJCi7IhqCamIp65fbw80Pvg0=
-
-env:
-  global:
-    # GITHUB_TOKEN
-    - secure: l1MUsIqSUwSuBoBNq+P585q94hITO26iwaBOoYUaTamljsFnGelt3ttW2/fFyi0mUEZK1eiQYTl0itDdM29Z1XnOiE/z+dcw2oI75R9Y7AIe8eAPuK7yAenMOVDvzAChrTN9IJ4qDt6VwXQdzRxu3Bo6c0vyupjgKXg4UYra5owPdg2AfYOlZ03ieKeiZKU0IvqqwPG2vvZZANLAQK3Iix09BoWt8YiLneAlUQZ+cJPT09rSN/jLvw9KFv0ONB+tLCWWs7JqLYUOEueETGutNi4T2UhHjCpOi7k8cp3r17IsmB9fDAgwpL8E5uTNjs/zRtInGxw17+i77jetxz+OZ7dgfazU2ujd6TLbrBpms5JYh2gsKr9MX4+8tn6iFhJOozO+0vkujzfYRMuVCWXlOFWCsKxaeZ4IcpoxtTa84EBIek9VfJIeTBrCfilPw+MExneyGzgSikKDvbgjIvlJ8BRp+XcPIHaA+22wOOCVRfR39xKf7bM12SsRGsBy33OerdkWl9H2AQUwoDuLJbs8jMSIxvjScuw4fGcqS0LMQhzch1cPK0gYuida/45ErB8UXWeW8ciNZ8j99rrpVevVbEinQwiV7ROkiEvlY8k31udm1EPmXm9VRp2LbTqoa7yfZgmKiPvdA+s2iUt+PYqHeN5nfVKqPMcUAPT6kKvyl/s=
-
-    # SLACK_TOKEN
-    - secure: MqP7jbIFXUHebi5GuBLKiEQs48g2Ary/nbk7pvHr+cxDw0B1T97RrHncQBCq9/F6AK08yTTR8fIMhK7GVfj0uSk0txfttbKfH+bYhzXga//DN2kJmcFHeJOISC4K66qmJ2j5HlJIOPESmDAE2kvlpvKQ94X4nw61k73MxerYCQZqEJh1VVkNaaiFqe9rpUQ2CbI7CVLbwQjhvHFGcYj5ajfALznEUHHQ6pNxBIdF7s562tFCso/yzNFz4n57aV5K3wB12c0PHKUTVHnd4Bf7Oii/kpqxm6vJ1QlLOLhnf3c6SRjbEVq1FqogY7jb0xMI37tqlZG+O7ykiL5TWTUTHYvtaa/Gfb3jo1T/dXOLc7jYh5EY2oMbTQMv7SUxgMZc+IqP5Kz01gFqon1OS+X4MYZTDBo7QL3RkS5Ky4icSmWPKTmcpgLDluhC8OTYuzH5hjfyI0u5FVhnQ+b3dMXw2TwO9phTyUOQZ230icqrVhZB00NzS/T/1SCAoS9peyLSVDMLbd18WuQVSJTrH265KvnDmjNyUqWBhaQDMlNtv6/UkznrVWU+8kw1Tfgy+8KIPcrrS8ITMuw8FXlO4z0bA0xjmpXkzPcOnbW4MXL4SqElyyYu6WFxhM86xo/NUvi6HsVxAvzpPQTvU2WC3P/CnbDoXBwnjiFsxhGB9s7YOsY=
+stages:
+  - Build
+  - Merge
